@@ -19,11 +19,11 @@
   --body-font: "Poppins", sans-serif;
 
   --big-font-size: 3.5rem;
-  --h1-font-size: 2.25rem;
+  --h1-font-size: 2.5rem;
   --h2-font-size: 1.5rem;
-  --h3-font-size: 1.25rem;
+  --h3-font-size: 1.8rem;
   --normal-font-size: 1rem;
-  --small-font-size: 0.875rem;
+  --small-font-size: 1.5rem;
   --smaller-font-size: 0.813rem;
   --tiny-font-size: 0.625rem;
 
@@ -56,7 +56,7 @@
     --h2-font-size: 1.25rem;
     --h3-font-size: 1rem;
     --normal-font-size: 0.938rem;
-    --small-font-size: 0.813rem;
+    --small-font-size: 1rem;
     --smaller-font-size: 0.75rem;
   }
 }
@@ -83,6 +83,10 @@ textarea {
 body {
   background-color: var(--body-color);
   color: var(--text-color);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(./assets/wallpaper2.jpg);
+  background-size: cover;
+  background-position: center;
+
 }
 
 h1,
@@ -112,6 +116,7 @@ img {
 /* ======= Reusable css classes ======= */
 .section {
   padding: 6rem 0 2rem;
+  padding: 4rem 1rem; /* Reduce padding for better spacing */
 }
 .section__title {
   font-size: var(--h1-font-size);
@@ -129,14 +134,20 @@ img {
 
 /* =========Layout======= */
 .container {
-  max-width: 968px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1rem; /* Inner padding for better readability */
+  max-width: 95%; /* Allow the container to extend fully */
+  margin-left: 3rem; /* Keep the left margin small */
+  margin-right: 3rem; /* Remove any extra space on the right */
+  
 }
 
 .grid {
   display: grid;
   gap: 1.5rem;
+  width: 100%; /* Ensure it spans the full width */
+  
 }
 
 /* ==============Buttons======== */
@@ -168,9 +179,26 @@ img {
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
   }
+  .button{
+    padding: 1rem 1.75rem;
+
+  }
+  .button_icon{
+    width: 22px;
+    height: 22px;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  body{
+    margin: 0 0 var(--header-height) 0;
+  }
+  .section{
+    padding: 2rem 0 4rem;
+  }
+  .section_subtitle{
+    margin-bottom: var(--mb-3);
+  }
 }
 
 @media screen and (max-width: 576px) {

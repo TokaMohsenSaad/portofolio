@@ -39,20 +39,22 @@
 
 .home__content {
   grid-template-columns: 116px repeat(2, 1fr);
-  padding-top: 5.5rem;
-  column-gap: 2rem;
+  padding-top: 6rem;
+  column-gap: 4rem;
   align-items: center;
+  
 }
 
 .home__img {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   background: url(../../assets/WhatsApp\ Image\ 2024-11-08\ at\ 4.19.33\ AM.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border-radius: 50%;
   animation: slowBounce 3s ease-in-out infinite;
+  margin: 0 auto; /* Center image */
 }
 
 @keyframes slowBounce {
@@ -143,7 +145,8 @@
 
 /* //////////////////////// */
 .home__description {
-  max-width: 400px;
+  font-size: 1.4rem;
+  max-width: 500px;
   margin-bottom: var(--mb-3);
 }
 
@@ -200,8 +203,8 @@
     margin-bottom: var(--mb-2-5);
   }
   .home__img {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
   }
   .home__scroll {
     margin-left: 7.5rem;
@@ -218,27 +221,32 @@
     order: initial;
     justify-self: center; /* Centers the image horizontally */
     align-self: center; /* Centers the image vertically */
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
   }
   .home__data {
     grid-column: 1/2; /* Adjusting to ensure content is centered properly */
+
   }
   .home__scroll {
     display: none;
   }
   .home__social {
-    display: flex;
-    align-items: center; /* Centers the social icons vertically */
 
-    gap: 1rem; /* Adds spacing between the icons */
-    height: 100%; /* Ensures the container takes up full height of the parent */
-  }
+    position: fixed; /* Fix position to keep it on the left */
+  top: 35%; /* Vertically center it */
+  left: 0.8rem; /* Align it to the far left */
+ 
+  transform: translateY(-50%); /* Offset the top to perfectly center it */
+  display: flex; /* Use flexbox to align icons */
+  flex-direction: column; /* Stack icons vertically */
+  gap: 1rem; /* Add spacing between the icons */
+ }
 }
 
 @media screen and (max-width: 350px) {
   .home__img {
-    width: 180px;
-    height: 180px;
+    width: 250px;
+    height: 250px;
   }
 }
