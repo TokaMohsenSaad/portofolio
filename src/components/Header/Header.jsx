@@ -59,13 +59,13 @@ const Header = () => {
 
               <li className="nav__item">
                 <Link
-                 to="/services"
+                 to="/projects"
                   className={`nav__link ${
                     activeLink === "#services" ? "active-link" : ""
                   }`}
                   onClick={() => handleLinkClick("#services")}
                 >
-                  <i className="uil uil-briefcase-alt nav__icon"></i> Services
+                  <i className="uil uil-briefcase-alt nav__icon"></i> Projects
                 </Link>
               </li>
 
