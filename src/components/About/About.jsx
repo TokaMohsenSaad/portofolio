@@ -18,7 +18,7 @@ const About = () => {
           As a frontend developer, I specialize in building scalable, dynamic web interfaces with a focus on performance and seamless user experiences. I’m passionate about creating clean, maintainable code and collaborating on innovative solutions that push boundaries in web development.
           </p>
         <a rel="noreferrer" target="_blank" href={CV} className="button button--flex">
-          Download CV 
+          View CV 
           <svg
                 className="button__icon"
                 xmlns="http://www.w3.org/2000/svg"

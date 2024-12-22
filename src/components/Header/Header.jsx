@@ -71,18 +71,6 @@ const Header = () => {
 
               <li className="nav__item">
                 <Link
-                 to="/portfolio"
-                  className={`nav__link ${
-                    activeLink === "#portfolio" ? "active-link" : ""
-                  }`}
-                  onClick={() => handleLinkClick("#portfolio")}
-                >
-                  <i className="uil uil-scenery nav__icon"></i> Portfolio
-                </Link>
-              </li>
-
-              <li className="nav__item">
-                <Link
                   to="/contact"
                   className={`nav__link ${
                     activeLink === "#contact" ? "active-link" : ""

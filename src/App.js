@@ -4,6 +4,7 @@ import Home from "./components/home/Home";
 import About from "./components/About/About";
 import Skills from "./components/skills/Skills";
 import Projects from "./components/Projects/Project";
+import Contact from "./components/contact/Contact";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Route path="/skills" element={<Skills />} />
       <Route path="/" element={<Home />} />
       <Route path="/projects" element={<Projects />} />
+      <Route path="/contact" element={<Contact />} />
     
       
       </Routes>
