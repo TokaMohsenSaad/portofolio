@@ -5,14 +5,15 @@ import About from "./components/About/About";
 import Skills from "./components/skills/Skills";
 import Projects from "./components/Projects/Project";
 import Contact from "./components/contact/Contact";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Footer from "./components/footer/Footer";
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <Router>
       
       <Header />
-      <Routes>
+      {/* <Routes>
    
       <Route path="/home" element={<Home />} />
       <Route path="/about" element={<About />} />
@@ -22,7 +23,15 @@ function App() {
       <Route path="/contact" element={<Contact />} />
     
       
-      </Routes>
+      </Routes> */}
+
+      <Home />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
+      
+      <Footer />
       </Router>
   );
 }
