@@ -83,7 +83,7 @@ textarea {
 body {
   background-color: var(--body-color);
   color: var(--text-color);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(./assets/wallpaper2.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.93)), url(./assets/wallpaper4.jpeg);
   background-size: cover;
   background-position: center;
 

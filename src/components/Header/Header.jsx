@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./header.css";
-import {Link} from "react-router-dom";
+
 
 const Header = () => {
   const [Toggle, showMenu] = useState(false);
@@ -22,63 +22,63 @@ const Header = () => {
           <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
             <ul className="nav__list grid">
               <li className="nav__item">
-                <Link
-                 to="#home"
+                <a
+                 href="#home"
                   className={`nav__link ${
                     activeLink === "#home" ? "active-link" : ""
                   }`}
                   onClick={() => handleLinkClick("#home")}
                 >
                   <i className="uil uil-estate nav__icon"></i> Home
-                </Link>
+                </a>
               </li>
 
               <li className="nav__item">
-                <Link
-                 to="#about"
+                <a
+                 href="#about"
                   className={`nav__link ${
                     activeLink === "#about" ? "active-link" : ""
                   }`}
                   onClick={() => handleLinkClick("#about")}
                 >
                   <i className="uil uil-user nav__icon"></i> About
-                </Link>
+                </a>
               </li>
 
               <li className="nav__item">
-                <Link
-                  to="#skills"
+                <a
+                  href="#skills"
                   className={`nav__link ${
                     activeLink === "#skills" ? "active-link" : ""
                   }`}
                   onClick={() => handleLinkClick("#skills")}
                 >
                   <i className="uil uil-file-alt nav__icon"></i> Skills
-                </Link>
+                </a>
               </li>
 
               <li className="nav__item">
-                <Link
-                 to="#projects"
+                <a
+                 href="#projects"
                   className={`nav__link ${
                     activeLink === "#services" ? "active-link" : ""
                   }`}
                   onClick={() => handleLinkClick("#services")}
                 >
                   <i className="uil uil-briefcase-alt nav__icon"></i> Projects
-                </Link>
+                </a>
               </li>
 
               <li className="nav__item">
-                <Link
-                  to="#contact"
+                <a
+                 href="#contact"
                   className={`nav__link ${
                     activeLink === "#contact" ? "active-link" : ""
                   }`}
                   onClick={() => handleLinkClick("#contact")}
                 >
                   <i className="uil uil-message nav__icon"></i> Contact
-                </Link>
+                </a>
               </li>
             </ul>
             <i

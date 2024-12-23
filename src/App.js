@@ -6,7 +6,7 @@ import Skills from "./components/skills/Skills";
 import Projects from "./components/Projects/Project";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 
 function App() {
   return (
@@ -30,7 +30,7 @@ function App() {
       <Skills />
       <Projects />
       <Contact />
-      
+
       <Footer />
       </Router>
   );
