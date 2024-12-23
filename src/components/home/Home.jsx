@@ -1,8 +1,8 @@
 import React from "react";
 import "./home.css";
-import Social from "../home/Social";
-import Data from "../home/Data";
-import ScrollDown from "../home/ScrollDown";
+import Social from "../home/Social.jsx";
+import Data from "../home/Data.jsx";
+import ScrollDown from "../home/ScrollDown.jsx";
 
 const Home = () => {
   return (
